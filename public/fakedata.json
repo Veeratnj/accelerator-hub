@@ -1,0 +1,145 @@
+{
+  "dashboard": {
+    "gpuCount": 128,
+    "tpuCount": 64,
+    "npuCount": 256,
+    "activeJobs": 847,
+    "idleCapacity": 23.5,
+    "totalCompute": 448,
+    "utilizationHistory": [
+      { "time": "00:00", "gpu": 65, "tpu": 78, "npu": 45 },
+      { "time": "02:00", "gpu": 72, "tpu": 82, "npu": 52 },
+      { "time": "04:00", "gpu": 58, "tpu": 75, "npu": 48 },
+      { "time": "06:00", "gpu": 85, "tpu": 88, "npu": 62 },
+      { "time": "08:00", "gpu": 92, "tpu": 95, "npu": 78 },
+      { "time": "10:00", "gpu": 88, "tpu": 91, "npu": 72 },
+      { "time": "12:00", "gpu": 95, "tpu": 89, "npu": 85 },
+      { "time": "14:00", "gpu": 87, "tpu": 92, "npu": 79 },
+      { "time": "16:00", "gpu": 91, "tpu": 88, "npu": 82 },
+      { "time": "18:00", "gpu": 78, "tpu": 85, "npu": 68 },
+      { "time": "20:00", "gpu": 72, "tpu": 79, "npu": 58 },
+      { "time": "22:00", "gpu": 68, "tpu": 74, "npu": 52 }
+    ],
+    "resourcePressure": [
+      { "time": "00:00", "compute": 45, "memory": 38, "idle": 17 },
+      { "time": "04:00", "compute": 52, "memory": 42, "idle": 6 },
+      { "time": "08:00", "compute": 72, "memory": 65, "idle": -37 },
+      { "time": "12:00", "compute": 85, "memory": 78, "idle": -63 },
+      { "time": "16:00", "compute": 78, "memory": 71, "idle": -49 },
+      { "time": "20:00", "compute": 58, "memory": 52, "idle": -10 }
+    ]
+  },
+  "accelerators": {
+    "gpu": [
+      { "id": "GPU-001", "model": "NVIDIA A100 80GB", "status": "Active", "utilization": 92, "memory": 78, "power": 85, "temperature": 72 },
+      { "id": "GPU-002", "model": "NVIDIA A100 80GB", "status": "Active", "utilization": 88, "memory": 82, "power": 82, "temperature": 68 },
+      { "id": "GPU-003", "model": "NVIDIA H100", "status": "Active", "utilization": 95, "memory": 91, "power": 92, "temperature": 75 },
+      { "id": "GPU-004", "model": "NVIDIA H100", "status": "Idle", "utilization": 12, "memory": 15, "power": 25, "temperature": 42 },
+      { "id": "GPU-005", "model": "NVIDIA A100 40GB", "status": "Active", "utilization": 78, "memory": 65, "power": 72, "temperature": 65 },
+      { "id": "GPU-006", "model": "NVIDIA T4", "status": "Active", "utilization": 85, "memory": 72, "power": 68, "temperature": 58 },
+      { "id": "GPU-007", "model": "NVIDIA T4", "status": "Offline", "utilization": 0, "memory": 0, "power": 0, "temperature": 28 },
+      { "id": "GPU-008", "model": "NVIDIA A100 80GB", "status": "Active", "utilization": 91, "memory": 85, "power": 88, "temperature": 71 }
+    ],
+    "tpu": [
+      { "id": "TPU-001", "model": "TPU v4", "status": "Active", "utilization": 95, "memory": 88, "power": 90, "temperature": 68 },
+      { "id": "TPU-002", "model": "TPU v4", "status": "Active", "utilization": 92, "memory": 85, "power": 88, "temperature": 65 },
+      { "id": "TPU-003", "model": "TPU v5e", "status": "Active", "utilization": 98, "memory": 92, "power": 95, "temperature": 72 },
+      { "id": "TPU-004", "model": "TPU v5e", "status": "Idle", "utilization": 8, "memory": 12, "power": 18, "temperature": 38 },
+      { "id": "TPU-005", "model": "TPU v4", "status": "Active", "utilization": 89, "memory": 82, "power": 85, "temperature": 62 },
+      { "id": "TPU-006", "model": "TPU v5p", "status": "Active", "utilization": 96, "memory": 94, "power": 92, "temperature": 70 }
+    ],
+    "npu": [
+      { "id": "NPU-001", "model": "Edge NPU Pro", "status": "Active", "utilization": 72, "memory": 58, "power": 45, "temperature": 48 },
+      { "id": "NPU-002", "model": "Edge NPU Pro", "status": "Active", "utilization": 68, "memory": 52, "power": 42, "temperature": 45 },
+      { "id": "NPU-003", "model": "Neural Engine X1", "status": "Active", "utilization": 85, "memory": 72, "power": 55, "temperature": 52 },
+      { "id": "NPU-004", "model": "Neural Engine X1", "status": "Idle", "utilization": 5, "memory": 8, "power": 12, "temperature": 32 },
+      { "id": "NPU-005", "model": "Edge NPU Lite", "status": "Active", "utilization": 62, "memory": 48, "power": 35, "temperature": 42 },
+      { "id": "NPU-006", "model": "Inference Core M1", "status": "Active", "utilization": 78, "memory": 65, "power": 48, "temperature": 50 },
+      { "id": "NPU-007", "model": "Inference Core M1", "status": "Offline", "utilization": 0, "memory": 0, "power": 0, "temperature": 25 },
+      { "id": "NPU-008", "model": "Edge NPU Pro", "status": "Active", "utilization": 75, "memory": 62, "power": 48, "temperature": 47 }
+    ]
+  },
+  "jobs": [
+    { "id": "JOB-7842", "name": "GPT-4 Fine-tuning", "accelerator": "GPU", "acceleratorId": "GPU-003", "status": "Running", "utilization": 95, "startTime": "2024-01-15T08:30:00Z", "priority": "High" },
+    { "id": "JOB-7843", "name": "Image Classification", "accelerator": "TPU", "acceleratorId": "TPU-001", "status": "Running", "utilization": 92, "startTime": "2024-01-15T09:15:00Z", "priority": "Medium" },
+    { "id": "JOB-7844", "name": "Edge Inference Batch", "accelerator": "NPU", "acceleratorId": "NPU-003", "status": "Running", "utilization": 85, "startTime": "2024-01-15T10:00:00Z", "priority": "Low" },
+    { "id": "JOB-7845", "name": "LLM Training Phase 2", "accelerator": "GPU", "acceleratorId": "GPU-001", "status": "Running", "utilization": 92, "startTime": "2024-01-15T06:00:00Z", "priority": "High" },
+    { "id": "JOB-7846", "name": "Matrix Optimization", "accelerator": "TPU", "acceleratorId": "TPU-003", "status": "Running", "utilization": 98, "startTime": "2024-01-15T07:45:00Z", "priority": "High" },
+    { "id": "JOB-7847", "name": "Real-time Detection", "accelerator": "NPU", "acceleratorId": "NPU-006", "status": "Running", "utilization": 78, "startTime": "2024-01-15T11:30:00Z", "priority": "Medium" },
+    { "id": "JOB-7848", "name": "Transformer Training", "accelerator": "GPU", "acceleratorId": "GPU-002", "status": "Queued", "utilization": 0, "startTime": null, "priority": "Medium" },
+    { "id": "JOB-7849", "name": "Batch Inference", "accelerator": "TPU", "acceleratorId": "TPU-002", "status": "Running", "utilization": 89, "startTime": "2024-01-15T08:00:00Z", "priority": "Low" },
+    { "id": "JOB-7850", "name": "Voice Recognition", "accelerator": "NPU", "acceleratorId": "NPU-001", "status": "Completed", "utilization": 0, "startTime": "2024-01-15T05:00:00Z", "priority": "Medium" },
+    { "id": "JOB-7851", "name": "Diffusion Model", "accelerator": "GPU", "acceleratorId": "GPU-005", "status": "Running", "utilization": 78, "startTime": "2024-01-15T09:00:00Z", "priority": "High" }
+  ],
+  "alerts": [
+    { "id": "ALT-001", "type": "warning", "message": "GPU-004 idle for more than 60 minutes", "timestamp": "2024-01-15T11:45:00Z", "severity": "Medium", "source": "GPU-004" },
+    { "id": "ALT-002", "type": "critical", "message": "TPU queue length exceeds threshold (15 jobs)", "timestamp": "2024-01-15T11:30:00Z", "severity": "High", "source": "TPU Cluster" },
+    { "id": "ALT-003", "type": "warning", "message": "NPU-003 temperature approaching limit (52°C)", "timestamp": "2024-01-15T11:15:00Z", "severity": "Medium", "source": "NPU-003" },
+    { "id": "ALT-004", "type": "info", "message": "Scheduled maintenance: GPU-007 offline", "timestamp": "2024-01-15T10:00:00Z", "severity": "Low", "source": "GPU-007" },
+    { "id": "ALT-005", "type": "critical", "message": "Memory pressure critical on H100 cluster", "timestamp": "2024-01-15T09:45:00Z", "severity": "High", "source": "GPU Cluster" },
+    { "id": "ALT-006", "type": "warning", "message": "Power consumption spike detected in TPU rack", "timestamp": "2024-01-15T09:30:00Z", "severity": "Medium", "source": "TPU-006" },
+    { "id": "ALT-007", "type": "info", "message": "Auto-scaling triggered: +2 NPU instances", "timestamp": "2024-01-15T09:00:00Z", "severity": "Low", "source": "NPU Cluster" },
+    { "id": "ALT-008", "type": "warning", "message": "Network latency increased on inference endpoints", "timestamp": "2024-01-15T08:30:00Z", "severity": "Medium", "source": "Network" }
+  ],
+  "metrics": {
+    "utilizationByType": [
+      { "type": "GPU", "utilization": 82, "memory": 75, "power": 78 },
+      { "type": "TPU", "utilization": 89, "memory": 82, "power": 85 },
+      { "type": "NPU", "utilization": 68, "memory": 55, "power": 42 }
+    ],
+    "jobDistribution": [
+      { "name": "GPU Jobs", "value": 412, "color": "#6366f1" },
+      { "name": "TPU Jobs", "value": 285, "color": "#a855f7" },
+      { "name": "NPU Jobs", "value": 150, "color": "#06b6d4" }
+    ],
+    "healthMatrix": [
+      { "id": "GPU-001", "utilization": 92, "temperature": 72, "power": 85 },
+      { "id": "GPU-002", "utilization": 88, "temperature": 68, "power": 82 },
+      { "id": "GPU-003", "utilization": 95, "temperature": 75, "power": 92 },
+      { "id": "TPU-001", "utilization": 95, "temperature": 68, "power": 90 },
+      { "id": "TPU-002", "utilization": 92, "temperature": 65, "power": 88 },
+      { "id": "TPU-003", "utilization": 98, "temperature": 72, "power": 95 },
+      { "id": "NPU-001", "utilization": 72, "temperature": 48, "power": 45 },
+      { "id": "NPU-003", "utilization": 85, "temperature": 52, "power": 55 }
+    ],
+    "costPerformance": [
+      { "type": "GPU", "cost": 3.5, "performance": 92, "name": "A100 80GB" },
+      { "type": "GPU", "cost": 4.2, "performance": 98, "name": "H100" },
+      { "type": "GPU", "cost": 1.8, "performance": 72, "name": "T4" },
+      { "type": "TPU", "cost": 2.8, "performance": 88, "name": "TPU v4" },
+      { "type": "TPU", "cost": 3.2, "performance": 95, "name": "TPU v5e" },
+      { "type": "NPU", "cost": 0.8, "performance": 65, "name": "Edge NPU" },
+      { "type": "NPU", "cost": 1.2, "performance": 78, "name": "Neural X1" }
+    ],
+    "powerConsumption": [
+      { "time": "00:00", "gpu": 245, "tpu": 180, "npu": 85 },
+      { "time": "04:00", "gpu": 268, "tpu": 195, "npu": 92 },
+      { "time": "08:00", "gpu": 385, "tpu": 285, "npu": 145 },
+      { "time": "12:00", "gpu": 420, "tpu": 310, "npu": 165 },
+      { "time": "16:00", "gpu": 395, "tpu": 290, "npu": 155 },
+      { "time": "20:00", "gpu": 310, "tpu": 225, "npu": 115 }
+    ]
+  },
+  "logs": [
+    { "timestamp": "2024-01-15T12:00:15Z", "event": "Job JOB-7842 checkpoint saved", "severity": "info" },
+    { "timestamp": "2024-01-15T11:58:42Z", "event": "TPU-003 utilization reached 98%", "severity": "warning" },
+    { "timestamp": "2024-01-15T11:55:30Z", "event": "Auto-scaling evaluation triggered", "severity": "info" },
+    { "timestamp": "2024-01-15T11:52:18Z", "event": "Memory threshold exceeded on GPU-003", "severity": "warning" },
+    { "timestamp": "2024-01-15T11:48:05Z", "event": "New job JOB-7851 scheduled", "severity": "info" },
+    { "timestamp": "2024-01-15T11:45:00Z", "event": "GPU-004 marked as idle", "severity": "warning" },
+    { "timestamp": "2024-01-15T11:42:33Z", "event": "Inference batch completed on NPU cluster", "severity": "info" },
+    { "timestamp": "2024-01-15T11:38:20Z", "event": "Network health check passed", "severity": "info" },
+    { "timestamp": "2024-01-15T11:35:10Z", "event": "TPU queue length: 15 jobs pending", "severity": "critical" },
+    { "timestamp": "2024-01-15T11:30:00Z", "event": "System metrics snapshot collected", "severity": "info" }
+  ],
+  "workloadRouting": {
+    "rules": [
+      { "condition": "High matrix operations", "recommendation": "TPU", "reason": "TPUs excel at matrix multiplication with 3x throughput" },
+      { "condition": "Low latency inference", "recommendation": "NPU", "reason": "NPUs provide sub-millisecond inference latency" },
+      { "condition": "General training workload", "recommendation": "GPU", "reason": "GPUs offer balanced compute for diverse training tasks" },
+      { "condition": "Large language models", "recommendation": "GPU", "reason": "A100/H100 optimized for transformer architectures" },
+      { "condition": "Batch image processing", "recommendation": "TPU", "reason": "TPU v5e pods deliver optimal batch throughput" },
+      { "condition": "Edge deployment", "recommendation": "NPU", "reason": "NPUs designed for power-efficient edge inference" }
+    ]
+  }
+}
